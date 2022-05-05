@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
-    <script type="text/javascript" src="index.js"></script>
     <title>Decodificador</title>
 </head>
 
@@ -20,31 +19,29 @@
                     <h1> Decodificador</h1>
                 </div>
                 <div id=BtRadio>
-                    <label for="Base64"> </label> Codificar <input type="radio" name="radio" > 
-                    <label for="cezar"> </label> Decodificar <input  type="radio" name="radio"  />
+                    <input type = "radio" name = "codificar" value = "codificar" > codificar <br>
+                    <input type = "radio" name = "codificar"  value = "decodificar" > decodificar <br>
                 </div>
                 <div>
-                    <select name="select" id="select">
-                        <option value="0">Selecione</option>
+                    <select name="select" id="select" required>
+                        <option value="0"selected disabled>Selecione</option>
                         <option value="1">Base 64</option>
                         <option value="2">Cifra de Cézar</option>
                     </select>
                 </div>
-                <div>
-                <label for="input"> chave: </label> <input style="width: 50px " id="input" type="text">
+                <div id = "chaveDiv">
+                <label for="input"> chave: </label> <input style="width: 50px "  type="number" id = "chave">
                 </div>
                 <div >
-                    <label for="digite"> Digite: </label> <input id="digite" type="text" >
+                    <label for="entrada"> Digite: </label> <input id="entrada" type="text" >
                 </div>
                 <div>
-                    <label for="traduzir"> Traduzir</label><input type="text" id=traduzir>
+                    <label for="saida">tradução:</label> <div id = saida> </div>
                 </div>
                 <div>
-                    <button type = >Codificar</button>
+                    <button id = "btn" prevent >Botão</button>
                 </div>
-                <div>
-                <button type = >Decodificar</button>
-                <div>
+                
             </div>
         </form>
     </div>
@@ -53,7 +50,7 @@
     </div>
 
     </div>
-
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

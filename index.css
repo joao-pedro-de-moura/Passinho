@@ -20,8 +20,12 @@
     width: auto ;
 }
 #chaveDiv{
-    width: auto ;
+    display: none;
 }
+
 #titulo{
     width: auto ;
+}
+#traduzir{
+    background-color: aliceblue;
 }
